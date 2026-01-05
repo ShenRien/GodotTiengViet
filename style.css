@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Lora";
+    scr: url("/assets/fonts/Lora/Lora-VariableFont-wght.ttf") format('truetype');
+}
+
+:root {
+    --md-text-font: "Lora";
+    font-family: "Lora";
+    scr: url("/assets/fonts/Lora/Lora-VariableFont-wght.ttf") format('truetype');
+
+}
+
+.admonition {
+    border-width: 3px;
+    border-left-width: 6px;
+    box-shadow: 1px 1px 5px rgba(17, 6, 6, 0.3) !important;
+    background-color: rgba(108, 232, 199, .05) !important;
+}
+
+body {
+    font-family: "Lora";
+    scr: url("/assets/fonts/Lora/Lora-VariableFont-wght.ttf") format('truetype');
+    color: #100;
+}
+
+h2 {
+    margin-top: 55px;
+    margin-bottom: 15px;
+}

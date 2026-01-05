@@ -1,0 +1,656 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../list-of-features/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Introduction - Godot Documents Tiếng việt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gioi-thieu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Godot Documents Tiếng việt" class="md-header__button md-logo" aria-label="Godot Documents Tiếng việt" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Godot Documents Tiếng việt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Godot Documents Tiếng việt" class="md-nav__button md-logo" aria-label="Godot Documents Tiếng việt" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Godot Documents Tiếng việt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trang chủ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#truoc-khi-bat-au" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trước khi bắt đầu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gioi-thieu-ve-godot-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Giới thiệu về Godot Engine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cau-truc-cua-tai-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cấu trúc của tài liệu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gioi-thieu-ve-tai-lieu-nay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Giới thiệu về tài liệu này
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list-of-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Danh sách tính năng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../System%20requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yêu cầu hệ thống
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#truoc-khi-bat-au" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trước khi bắt đầu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gioi-thieu-ve-godot-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Giới thiệu về Godot Engine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cau-truc-cua-tai-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cấu trúc của tài liệu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gioi-thieu-ve-tai-lieu-nay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Giới thiệu về tài liệu này
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gioi-thieu">Giới thiệu</h1>
+<p>GDScript:
+<div class="highlight"><pre><span></span><code>func _ready():
+    print(&quot;Hello world!&quot;)
+</code></pre></div>
+C#:
+<div class="highlight"><pre><span></span><code>public override void _Ready()
+{
+    GD.Print(&quot;Hello world!&quot;);
+}
+</code></pre></div></p>
+<p>Chào mừng đến với tài liệu chính thức của Godot Engine, công cụ phát triển game 2D và 3D mã nguồn mở miễn phí do cộng đồng phát triển! Đằng sau cái tên dài dòng này, bạn sẽ tìm thấy một công cụ mạnh mẽ nhưng thân thiện với người dùng, cho phép bạn phát triển bất kỳ loại game nào, trên bất kỳ nền tảng nào và không có bất kỳ hạn chế nào về cách sử dụng.</p>
+<p>Trang này cung cấp tổng quan rộng về công cụ và tài liệu này, giúp bạn biết nên bắt đầu từ đâu nếu bạn là người mới hoặc tìm kiếm thông tin về một tính năng cụ thể ở đâu.</p>
+<h2 id="truoc-khi-bat-au">Trước khi bắt đầu</h2>
+<p>Trang <strong>Hướng dẫn và tài nguyên</strong> liệt kê các video hướng dẫn do cộng đồng đóng góp. Nếu bạn thích xem video hơn đọc văn bản, hãy xem qua các video này. Nếu không, <strong>phần Bắt đầu</strong> là một điểm khởi đầu tốt.</p>
+<p>rong trường hợp bạn gặp khó khăn với một trong các hướng dẫn hoặc dự án của mình, bạn có thể tìm kiếm sự trợ giúp trên <strong>các kênh Cộng đồng</strong> khác nhau, đặc biệt là cộng đồng <a href="https://discord.com/invite/godotengine"><strong>Discord</strong></a> và <a href="https://forum.godotengine.org"><strong>Diễn đàn</strong></a> của Godot.</p>
+<h2 id="gioi-thieu-ve-godot-engine">Giới thiệu về Godot Engine</h2>
+<p>Một công cụ phát triển game (game engine) là một công cụ phức tạp và khó có thể trình bày chỉ trong vài từ. Dưới đây là một bản tóm tắt ngắn gọn, cái mà bạn có thể tự do sử dụng lại nếu cần một bài viết ngắn gọn về Godot Engine:</p>
+<blockquote>
+<p>Godot Engine là một công cụ phát triển game đa nền tảng, đầy đủ tính năng để tạo ra các trò chơi 2D và 3D từ một giao diện thống nhất. Nó cung cấp một bộ công cụ phổ biến toàn diện (comprehensive set of common tools), để người dùng có thể tập trung vào việc làm game mà không cần phải tự mình tạo ra mọi thứ từ đầu. Trò chơi có thể được xuất chỉ với một cú nhấp chuột sang nhiều nền tảng, bao gồm các nền tảng máy tính để bàn (Linux, macOS, Windows), nền tảng di động (Android, iOS), cũng như các nền tảng dựa trên web (Web-based) và các hệ máy chơi game consoles.</p>
+<p>Godot hoàn toàn miễn phí và mã nguồn mở theo giấy phép MIT. Không có điều kiện ràng buộc, không có tiền bản quyền, không gì cả. Trò chơi của người dùng là của riêng họ đến từng dòng mã cuối cùng. Việc phát triển Godot hoàn toàn độc lập và do cộng đồng điều khiển, trao quyền cho người dùng giúp định hình công cụ của họ để phù hợp với kỳ vọng của họ. Godot engine được hỗ trợ bởi Quỹ Godot, một tổ chức phi lợi nhuận.</p>
+</blockquote>
+<h2 id="cau-truc-cua-tai-lieu">Cấu trúc của tài liệu</h2>
+<p>Tài liệu này dược tổ chức thành nhiều thành phần:</p>
+<ul>
+<li>
+<p><strong>Giới thiệu</strong>: Chứa phần giới thiệu này cũng như thông tin về công cụ, lịch sử, giấy phép, tác giả, v.v. Nó cũng bao gồm các câu hỏi thường gặp (FAQs).</p>
+</li>
+<li>
+<p><strong>Getting Started</strong>: Chứa tất cả thông tin cần thiết về cách sử dụng engine để tạo trò chơi. Nó bắt đầu với phần Giới thiệu, đây nên là điểm khởi đầu cho người dùng mới. Đây là nơi tốt nhất để bắt đầu nếu bạn là người mới!</p>
+</li>
+<li>
+<p><strong>Hướng dẫn sử dụng</strong>: Bạn có thể đọc hoặc tham khảo khi cần, theo bất kỳ thứ tự nào. Nó chứa các hướng dẫn và tài liệu cụ thể về các tính năng.</p>
+</li>
+<li>
+<p><strong>Chi tiết về engine</strong>: Chứa các phần dành cho người dùng nâng cao và người đóng góp, với thông tin về cách thức biên dịch Godot engine, làm việc trên trình soạn thảo hoặc phát triển các mô-đun bằng C++.</p>
+</li>
+<li>
+<p><strong>Cộng đồng</strong>: Dành riêng cho các trao đổi thường nhật của cộng đồng Godot cũng như chứa danh sách các hướng dẫn và tài liệu của bên thứ ba được đề xuất ngoài tài liệu này. Nó cũng cung cấp chi tiết về Thư viện Asset. Nó cũng từng liệt kê các cộng đồng Godot, hiện được liệt kê trên <a href="https://godotengine.org/community/">trang web của Godot</a>.</p>
+</li>
+<li>
+<p>Cuối cùng, <strong>tài liệu tham khảo về Lớp (Class reference)</strong> mô tả đầy đủ API của Godot, cũng có sẵn trực tiếp trong trình soạn thảo kịch bản (script editor) của engine. Bạn có thể tìm thấy thông tin về tất cả các lớp, hàm, tín hiệu (signals), v.v. ở đây.</p>
+</li>
+</ul>
+<p>Ngoài tài liệu này, bạn cũng có thể tham khảo các <a href="https://github.com/godotengine/godot-demo-projects">dự án demo</a> khác của Godot.</p>
+<h2 id="gioi-thieu-ve-tai-lieu-nay">Giới thiệu về tài liệu này</h2>
+<p>Các thành viên của cộng đồng Godot Engine liên tục viết, sửa lỗi, biên tập và cải thiện tài liệu này. Chúng tôi luôn tìm kiếm thêm sự giúp đỡ. Bạn cũng có thể đóng góp bằng cách mở các issues trên Github hoặc dịch tài liệu sang ngôn ngữ của bạn. Nếu bạn quan tâm đến việc giúp đỡ, hãy xem Cách đóng góp và Viết tài liệu, hoặc liên hệ với nhóm Tài liệu trên Godot Contributors Chat.</p>
+<p>Tất cả nội dung tài liệu được cấp phép theo giấy phép Creative Commons Attribution 3.0 (CC BY 3.0) với sự ghi nhận tác giả "Juan Linietsky, Ariel Manzur và cộng đồng Godot Engine" trừ khi có ghi chú khác.</p>
+<p>Chúc bạn vui vẻ khi đọc và making games với Godot Engine!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Tài liệu được dịch bởi Shen2H từ bộ tài liệu chính thức của Godot!
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
