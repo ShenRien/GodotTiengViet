@@ -1,0 +1,872 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Complyingwithlicense/">
+      
+      
+        <link rel="next" href="../documentationchangelog/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Godot release Policy - Godot Documents Tiếng việt (in progress)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#godot-release-policy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Godot Documents Tiếng việt (in progress)" class="md-header__button md-logo" aria-label="Godot Documents Tiếng việt (in progress)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Godot Documents Tiếng việt (in progress)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Godot release Policy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Godot Documents Tiếng việt (in progress)" class="md-nav__button md-logo" aria-label="Godot Documents Tiếng việt (in progress)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Godot Documents Tiếng việt (in progress)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trang chủ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list-of-features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Danh sách tính năng
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../System%20requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yêu cầu hệ thống
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Câu hỏi thường gặp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complyingwithlicense/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Về việc tuân thủ điều khoản và giấy phép
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Godot release Policy
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Godot release Policy
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#godot-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Godot versioning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-support-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release support timeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-version-should-i-use-for-a-new-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which version should I use for a new project?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#should-i-upgrade-my-project-to-use-new-engine-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Should I upgrade my project to use new engine versions?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-is-the-next-release-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      When is the next release out?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-criteria-for-compatibility-across-engine-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the criteria for compatibility across engine versions?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentationchangelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation nhật ký thay đổi tài liệu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#godot-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Godot versioning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-support-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release support timeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-version-should-i-use-for-a-new-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which version should I use for a new project?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#should-i-upgrade-my-project-to-use-new-engine-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Should I upgrade my project to use new engine versions?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-is-the-next-release-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      When is the next release out?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-criteria-for-compatibility-across-engine-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the criteria for compatibility across engine versions?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="godot-release-policy">Godot release policy</h1>
+<p>Godot's release policy is in constant evolution. The description below provides a general idea of what to expect, but what will actually happen depends on the choices of core contributors and the needs of the community at a given time.</p>
+<h2 id="godot-versioning">Godot versioning</h2>
+<p>Godot loosely follows <a href="https://semver.org/">Semantic Versioning</a> with a <code>major.minor.patch</code> versioning system, albeit with an interpretation of each term adapted to the complexity of a game engine:</p>
+<ul>
+<li>
+<p>The <code>major</code> version is incremented when major compatibility breakages happen which imply significant porting work to move projects from one major version to another.</p>
+<p>For example, porting Godot projects from Godot 3.x to Godot 4.x requires running the project through a conversion tool, and then performing a number of further adjustments manually for what the tool could not do automatically.</p>
+</li>
+<li>
+<p>The <code>minor</code> version is incremented for feature releases that do not break compatibility in a major way. Minor compatibility breakage in very specific areas <em>may</em> happen in minor versions, but the vast majority of projects should not be affected or require significant porting work.</p>
+<p>This is because Godot, as a game engine, covers many areas like rendering, physics, and scripting. Fixing bugs or implementing new features in one area might sometimes require changing a feature's behavior or modifying a class's interface, even if the rest of the engine API remains backwards compatible.</p>
+</li>
+</ul>
+<p>Tip</p>
+<p>Upgrading to a new minor version is recommended for all users, but some testing is necessary to ensure that your project still behaves as expected.</p>
+<ul>
+<li>
+<p>The <code>patch</code> version is incremented for maintenance releases which focus on fixing bugs and security issues, implementing new requirements for platform support, and backporting safe usability enhancements. Patch releases are backwards compatible.</p>
+<p>Patch versions may include minor new features which do not impact the existing API, and thus have no risk of impacting existing projects.</p>
+</li>
+</ul>
+<p>Tip</p>
+<p>Updating to new patch versions is therefore considered safe and strongly recommended to all users of a given stable branch.</p>
+<p>We call <code>major.minor</code> combinations <em>stable branches</em>. Each stable branch starts with a <code>major.minor</code> release (without the <code>0</code> for <code>patch</code>) and is further developed for maintenance releases in a Git branch of the same name (for example patch updates for the 4.0 stable branch are developed in the <code>4.0</code> Git branch).</p>
+<h2 id="release-support-timeline">Release support timeline</h2>
+<p>Stable branches are supported <em>at least</em> until the next stable branch is released and has received its first patch update. In practice, we support stable branches on a <em>best effort</em> basis for as long as they have active users who need maintenance updates.</p>
+<p>Whenever a new major version is released, we make the previous stable branch a long-term supported release, and do our best to provide fixes for issues encountered by users of that branch who cannot port complex projects to the new major version. This was the case for the 2.1 branch, and is the case for the 3.x branch.</p>
+<p>In a given minor release series, only the latest patch release receives support. If you experience an issue using an older patch release, please upgrade to the latest patch release of that series and test again before reporting an issue on GitHub.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Version</strong></td>
+<td><strong>Release date</strong></td>
+<td><strong>Support level</strong></td>
+</tr>
+<tr>
+<td>Godot 4.5 (master)</td>
+<td>Q3 2025 (estimate)</td>
+<td><img alt="unstable" src="https://docs.godotengine.org/en/stable/_images/unstable.png" /> <em>Development.</em> Receives new features, usability and performance improvements, as well as bug fixes, while under development.</td>
+</tr>
+<tr>
+<td>Godot 4.4</td>
+<td>March 2025</td>
+<td><img alt="supported" src="https://docs.godotengine.org/en/stable/_images/supported.png" /> Receives fixes for bugs and security issues, as well as patches that enable platform support.</td>
+</tr>
+<tr>
+<td>Godot 4.3</td>
+<td>August 2024</td>
+<td><img alt="supported" src="https://docs.godotengine.org/en/stable/_images/supported.png" /> Receives fixes for bugs and security issues, as well as patches that enable platform support.</td>
+</tr>
+<tr>
+<td>Godot 4.2</td>
+<td>November 2023</td>
+<td><img alt="partial" src="https://docs.godotengine.org/en/stable/_images/partial.png" /> Receives fixes for security and platform support issues only.</td>
+</tr>
+<tr>
+<td>Godot 4.1</td>
+<td>July 2023</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 4.1.4).</td>
+</tr>
+<tr>
+<td>Godot 4.0</td>
+<td>March 2023</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 4.0.4).</td>
+</tr>
+<tr>
+<td>Godot 3.7 (3.x)</td>
+<td>No ETA for now</td>
+<td><img alt="supported" src="https://docs.godotengine.org/en/stable/_images/supported.png" /> <em>Beta.</em> Receives new features, usability and performance improvements, as well as bug fixes, while under development.</td>
+</tr>
+<tr>
+<td>Godot 3.6</td>
+<td>September 2024</td>
+<td><img alt="supported" src="https://docs.godotengine.org/en/stable/_images/supported.png" /> Receives fixes for bugs and security issues, as well as patches that enable platform support.</td>
+</tr>
+<tr>
+<td>Godot 3.5</td>
+<td>August 2022</td>
+<td><img alt="partial" src="https://docs.godotengine.org/en/stable/_images/partial.png" /> Receives fixes for security and platform support issues only.</td>
+</tr>
+<tr>
+<td>Godot 3.4</td>
+<td>November 2021</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 3.4.5).</td>
+</tr>
+<tr>
+<td>Godot 3.3</td>
+<td>April 2021</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 3.3.4).</td>
+</tr>
+<tr>
+<td>Godot 3.2</td>
+<td>January 2020</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 3.2.3).</td>
+</tr>
+<tr>
+<td>Godot 3.1</td>
+<td>March 2019</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 3.1.2).</td>
+</tr>
+<tr>
+<td>Godot 3.0</td>
+<td>January 2018</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 3.0.6).</td>
+</tr>
+<tr>
+<td>Godot 2.1</td>
+<td>July 2016</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 2.1.6).</td>
+</tr>
+<tr>
+<td>Godot 2.0</td>
+<td>February 2016</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported (last update: 2.0.4.1).</td>
+</tr>
+<tr>
+<td>Godot 1.1</td>
+<td>May 2015</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported.</td>
+</tr>
+<tr>
+<td>Godot 1.0</td>
+<td>December 2014</td>
+<td><img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No longer supported.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Legend:</strong> <img alt="supported" src="https://docs.godotengine.org/en/stable/_images/supported.png" /> Full support – <img alt="partial" src="https://docs.godotengine.org/en/stable/_images/partial.png" /> Partial support – <img alt="eol" src="https://docs.godotengine.org/en/stable/_images/eol.png" /> No support (end of life) – <img alt="unstable" src="https://docs.godotengine.org/en/stable/_images/unstable.png" /> Development version</p>
+<p>Pre-release Godot versions aren't intended to be used in production and are provided for testing purposes only.</p>
+<p>See also</p>
+<p>See <a href="https://docs.godotengine.org/en/stable/tutorials/migrating/upgrading_to_godot_4.html#doc-upgrading-to-godot-4">Upgrading from Godot 3 to Godot 4</a> for instructions on migrating a project from Godot 3.x to 4.x.</p>
+<h2 id="which-version-should-i-use-for-a-new-project">Which version should I use for a new project?<a href="https://docs.godotengine.org/en/stable/about/release_policy.html#which-version-should-i-use-for-a-new-project" title="Link to this heading"></a></h2>
+<p>We recommend using Godot 4.x for new projects, as the Godot 4.x series will be supported long after 3.x stops receiving updates in the future. One caveat is that a lot of third-party documentation hasn't been updated for Godot 4.x yet. If you have to follow a tutorial designed for Godot 3.x, we recommend keeping <a href="https://docs.godotengine.org/en/stable/tutorials/migrating/upgrading_to_godot_4.html#doc-upgrading-to-godot-4">Upgrading from Godot 3 to Godot 4</a> open in a separate tab to check which methods have been renamed (if you get a script error while trying to use a specific node or method that was renamed in Godot 4.x).</p>
+<p>If your project requires a feature that is missing in 4.x (such as GLES2/WebGL 1.0), you should use Godot 3.x for a new project instead.</p>
+<h2 id="should-i-upgrade-my-project-to-use-new-engine-versions">Should I upgrade my project to use new engine versions?</h2>
+<p>Note</p>
+<p>Upgrading software while working on a project is inherently risky, so consider whether it's a good idea for your project before attempting an upgrade. Also, make backups of your project or use version control to prevent losing data in case the upgrade goes wrong.</p>
+<p>That said, we do our best to keep minor and especially patch releases compatible with existing projects.</p>
+<p>The general recommendation is to upgrade your project to follow new <em>patch</em> releases, such as upgrading from 4.0.2 to 4.0.3. This ensures you get bug fixes, security updates and platform support updates (which is especially important for mobile platforms). You also get continued support, as only the last patch release receives support on official community platforms.</p>
+<p>For <em>minor</em> releases, you should determine whether it's a good idea to upgrade on a case-by-case basis. We've made a lot of effort in making the upgrade process as seamless as possible, but some breaking changes may be present in minor releases, along with a greater risk of regressions. Some fixes included in minor releases may also change a class' expected behavior as required to fix some bugs. This is especially the case in classes marked as <em>experimental</em> in the documentation.</p>
+<p><em>Major</em> releases bring a lot of new functionality, but they also remove previously existing functionality and may raise hardware requirements. They also require much more work to upgrade to compared to minor releases. As a result, we recommend sticking with the major release you've started your project with if you are happy with how your project currently works. For example, if your project was started with 3.5, we recommend upgrading to 3.5.2 and possibly 3.6 in the future, but not to 4.0+, unless your project really needs the new features that come with 4.0+.</p>
+<h2 id="when-is-the-next-release-out">When is the next release out?</h2>
+<p>While Godot contributors aren't working under any deadlines, we strive to publish minor releases relatively frequently.</p>
+<p>In particular, after the very long release cycle for 4.0, we are pivoting to a faster-paced development workflow, 4.1 released 4 months after 4.0, and 4.2 released 4 months after 4.1.</p>
+<p>Frequent minor releases will enable us to ship new features faster (possibly as experimental), get user feedback quickly, and iterate to improve those features and their usability. Likewise, the general user experience will be improved more steadily with a faster path to the end users.</p>
+<p>Maintenance (patch) releases are released as needed with potentially very short development cycles, to provide users of the current stable branch with the latest bug fixes for their production needs.</p>
+<p>There is currently no planned release date for the next 3.x minor version, 3.7. The current stable release, 3.6, may be the last stable branch of Godot 3.x. Godot 3.x is supported on a best-effort basis, as long as contributors continue to maintain it.</p>
+<h2 id="what-are-the-criteria-for-compatibility-across-engine-versions">What are the criteria for compatibility across engine versions?</h2>
+<p>Note</p>
+<p>This section is intended to be used by contributors to determine which changes are safe for a given release. The list is not exhaustive; it only outlines the most common situations encountered during Godot's development.</p>
+<p>The following changes are acceptable in patch releases:</p>
+<ul>
+<li>
+<p>Fixing a bug in a way that has no major negative impact on most projects, such as a visual or physics bug. Godot's physics engine is not deterministic, so physics bug fixes are not considered to break compatibility. If fixing a bug has a negative impact that could impact a lot of projects, it should be made optional (e.g. using a project setting or separate method).</p>
+</li>
+<li>
+<p>Adding a new optional parameter to a method.</p>
+</li>
+<li>
+<p>Small-scale editor usability tweaks.</p>
+</li>
+</ul>
+<p>Note that we tend to be more conservative with the fixes we allow in each subsequent patch release. For instance, 4.0.1 may receive more impactful fixes than 4.0.4 would.</p>
+<p>The following changes are acceptable in minor releases, but not patch releases:</p>
+<ul>
+<li>
+<p>Significant new features.</p>
+</li>
+<li>
+<p>Renaming a method parameter. In C#, method parameters can be passed by name (but not in GDScript). As a result, this can break some projects that use C#.</p>
+</li>
+<li>
+<p>Deprecating a method, member variable, or class. This is done by adding a deprecated flag to its class reference, which will show up in the editor. When a method is marked as deprecated, it's slated to be removed in the next <em>major</em> release.</p>
+</li>
+<li>
+<p>Changes that affect the default project theme's visuals.</p>
+</li>
+<li>
+<p>Bug fixes which significantly change the behavior or the output, with the aim to meet user expectations better. In comparison, in patch releases, we may favor keeping a buggy behavior so we don't break existing projects which likely already rely on the bug or use a workaround.</p>
+</li>
+<li>
+<p>Performance optimizations that result in visual changes.</p>
+</li>
+</ul>
+<p>The following changes are considered <strong>compatibility-breaking</strong> and can only be performed in a new major release:</p>
+<ul>
+<li>
+<p>Renaming or removing a method, member variable, or class.</p>
+</li>
+<li>
+<p>Modifying a node's inheritance tree by making it inherit from a different class.</p>
+</li>
+<li>
+<p>Changing the default value of a project setting value in a way that affects existing projects. To only affect new projects, the project manager should write a modified <code>project.godot</code> instead.</p>
+</li>
+</ul>
+<p>Since Godot 5.0 hasn't been branched off yet, we currently discourage making compatibility-breaking changes of this kind.</p>
+<p>Note</p>
+<p>When modifying a method's signature in any fashion (including adding an optional parameter), a GDExtension compatibility method must be created. This ensures that existing GDExtensions continue to work across patch and minor releases, so that users don't have to recompile them. See <a href="https://docs.godotengine.org/en/stable/engine_details/development/handling_compatibility_breakages.html#doc-handling-compatibility-breakages">Handling compatibility breakages</a> for more information.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Tài liệu được dịch bởi Shen2H từ bộ tài liệu chính thức của Godot!
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
